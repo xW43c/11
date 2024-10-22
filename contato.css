@@ -1,0 +1,110 @@
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.contato {
+  padding: 40px 20px;
+  background-color: white;
+  max-width: 800px; /* Limite de largura da seção de contato */
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o conteúdo de texto */
+}
+
+.contato h2 {
+  color: #ff6600;
+  margin-bottom: 30px; /* Espaçamento maior abaixo do título */
+}
+
+/* Alinhando as informações de contato verticalmente */
+.info-contato {
+  display: flex;
+  flex-direction: column; /* Alinhamento vertical */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 20px; /* Espaçamento entre os itens */
+  margin-bottom: 40px;
+}
+
+.detalhe-contato {
+  width: 100%; /* Largura completa para que cada detalhe ocupe uma linha inteira */
+}
+
+.detalhe-contato ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detalhe-contato li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o texto */
+}
+
+.detalhe-contato li i {
+  margin-right: 10px; /* Espaço entre o ícone e o texto */
+  color: #ff6600;
+  font-size: 20px;
+}
+
+/* Formulário e mapa centralizados */
+.mapa {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario-contato {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input,
+textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button.cta {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  text-align: center;
+}
+
+button.cta:hover {
+  background-color: #e05500;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}

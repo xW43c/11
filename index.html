@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corretora Bárbara</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="style_menu.css" />
+  </head>
+  <body>
+    <!--CABEÇALHO DE NAVEGAÇÃO-->
+    <header></header>
+    <main>
+      <!--BANNER-->
+      <section class="banner">
+        <h1>Transformando Sonhos em Realidade!</h1>
+        <p>Encontre o imóvel dos seus sonhos com o Bony Imóveis.</p>
+        <a href="#" class="cta">Anuncie seu Imóvel</a>
+      </section>
+
+      <!-- FILTRO -->
+      <section class="filtro">
+        <h2>Encontre seu imóvel</h2>
+        <form id="search-form" action="resultados.html" method="get">
+          <div class="search-container">
+            <div class="search-field">
+              <label for="cidade">Cidade:</label>
+              <select id="cidade" name="cidade">
+                <option value="">Selecione</option>
+                <option value="feira-de-santana">Indiferente</option>
+                <option value="feira-de-santana">Camaçari - BA</option>
+                <option value="feira-de-santana">Feira de Santana - BA</option>
+                <option value="feira-de-santana">Salvador - BA</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="bairro">Bairro:</label>
+              <select id="bairro" name="bairro">
+                <option value="">Selecione</option>
+                <!-- Adicione as opções de bairros -->
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="tipo">Tipo de Imóvel:</label>
+              <select id="tipo" name="tipo">
+                <option value="">Selecione</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+                <option value="terreno">Terreno</option>
+                <option value="comercial">Comercial</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="negocio">Negócio:</label>
+              <select id="negocio" name="negocio">
+                <option value="">Selecione</option>
+                <option value="indiferente">Indiferente</option>
+                <option value="compra">Compra</option>
+                <option value="aluguel">Aluguel</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="valor">Valor:</label>
+              <select id="valor" name="valor">
+                <option value="">Selecione</option>
+                <option value="indiferente">Indiferente</option>
+                <option value="0-100000">Até R$100.000</option>
+                <option value="100000-300000">R$100.000 - R$300.000</option>
+                <option value="300000-500000">R$300.000 - R$500.000</option>
+                <option value="500000+">Acima de R$500.000</option>
+              </select>
+            </div>
+            <button type="submit" class="search-button">Buscar Imóveis</button>
+          </div>
+        </form>
+      </section>
+
+      <!--slideshow-->
+      <section class="properties">
+        <h2>Lançamentos</h2>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img
+              src="imagens/imagem1.jpg"
+              alt="Imagem 1"
+              onclick="redirectTo('pagina1.html')"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="imagens/imagem2.jpg"
+              alt="Imagem 2"
+              onclick="redirectTo('pagina2.html')"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="imagens/imagem3.jpg"
+              alt="Imagem 3"
+              onclick="redirectTo('pagina3.html')"
+            />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <script src="slide_ini.js"></script>
+
+      <!--Imóveis à Venda-->
+      <section class="properties">
+        <h2>Imóveis à Venda</h2>
+        <div class="property-grid">
+          <div class="property">
+            <img src="imovel1.jpg" alt="Imóvel 1" />
+            <h3>Casa em Condomínio</h3>
+            <p>R$ 500.000</p>
+            <a href="#" class="details-btn">Ver Detalhes</a>
+          </div>
+          <div class="property">
+            <img src="imovel2.jpg" alt="Imóvel 2" />
+            <h3>Apartamento à Venda</h3>
+            <p>R$ 350.000</p>
+            <a href="#" class="details-btn">Ver Detalhes</a>
+          </div>
+          <div class="property">
+            <img src="imovel3.jpg" alt="Imóvel 3" />
+            <h3>Sobrado no Centro</h3>
+            <p>R$ 750.000</p>
+            <a href="#" class="details-btn">Ver Detalhes</a>
+          </div>
+        </div>
+      </section>
+
+      <!--services-->
+      <section class="services">
+        <h2>Nossos Serviços</h2>
+        <div class="service-grid">
+          <div class="service">
+            <h3>Venda de Imóveis</h3>
+            <p>
+              Oferecemos uma ampla gama de imóveis para venda, com assessoria
+              completa durante o processo.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Locação de Imóveis</h3>
+            <p>
+              Imóveis para aluguel com condições flexíveis e suporte
+              personalizado.
+            </p>
+          </div>
+          <div class="service">
+            <h3>Financiamento Imobiliário</h3>
+            <p>
+              Parcerias com os principais bancos para facilitar seu
+              financiamento.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção de contato -->
+      <section class="contact">
+        <h2>Fale Conosco</h2>
+        <form id="contact-form" action="#" method="POST">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </section>
+      <script src="form-validation.js"></script>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer></footer>
+    <script src="loadComponents.js"></script>
+  </body>
+</html>

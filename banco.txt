@@ -1,0 +1,21 @@
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE imoveis (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cidade VARCHAR(100),
+    bairro VARCHAR(100),
+    preco DECIMAL(10,2),
+    venda TINYINT(1),
+    aluguel TINYINT(1),
+    descricao TEXT,
+    quartos INT,
+    imagens TEXT
+);

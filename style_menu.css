@@ -1,0 +1,95 @@
+/* -----------------------Estilos básicos para o menu ------------------------------------------*/
+nav {
+  background-color: #ff6600;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Usa flexbox para organizar os itens horizontalmente */
+  justify-content: space-between; /* Espaça igualmente os itens principais */
+}
+
+li {
+  position: relative;
+}
+
+li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: block;
+  text-align: center; /* Centraliza o texto dos itens */
+  width: 100%; /* Garante que o link ocupe toda a largura do item */
+}
+
+/* -------------------------Estilo para mudança de cor ao passar o mouse -----------------------*/
+.menu > li:hover > a {
+  background-color: #f46200;
+}
+
+/*--------------------------- Estilos para submenus---------------------------------------------- */
+li ul {
+  display: none;
+  position: absolute;
+  background-color: #f46200;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li ul li a {
+  color: #fff;
+  padding: 10px;
+  background-color: #f46200;
+}
+
+li ul li a:hover {
+  background-color: #ff6600;
+}
+
+/* ---------------------------------Estilos para sub-submenus (abrir para o lado)---------------- */
+li ul li ul {
+  top: 0;
+  left: 100%;
+}
+
+/*----------------------------------Estilos para itens principais------------------------------ */
+.menu > li {
+  flex-grow: 1; /* Faz com que os itens cresçam igualmente para preencher o espaço */
+  text-align: center; /* Centraliza o texto nos itens do menu */
+}
+
+.menu > li a {
+  padding: 10px 20px;
+}
+
+.menu::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--------------------------------- Estilos para Login e Registro -------------------------------*/
+.auth {
+  float: right;
+}
+
+.logo {
+  background-image: url("imagens/logo_barbara.jpeg");
+  background-size: contain; /* Mantém a proporção da imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center; /* Centraliza a imagem */
+  width: 150px; /* Largura da logo */
+  height: 100px; /* Altura da logo */
+}

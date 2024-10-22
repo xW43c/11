@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+
+header h2 {
+    margin: 0;
+}
+
+.welcome {
+    color: #ff6600;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Submenu for Logout */
+.user-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.user-menu button {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.user-menu button:hover {
+    background-color: #cc5200;
+}
+
+/* Buttons (Add Property and Upload) */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cc5200;
+}
+
+/* Links */
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input[type="email"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, input[type="file"]:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Add Property Section */
+.add-property-btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

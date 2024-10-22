@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corretora Bárbara</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <link rel="stylesheet" href="estilo_detalhe.css" />
+    <link rel="stylesheet" href="style_menu.css" />
+  </head>
+  <body>
+    <!--CABEÇALHO DE NAVEGAÇÃO-->
+    <header></header>
+    <main>
+      <!-- Galeria de Fotos do Imóvel -->
+      <section class="properties">
+        <!-- Miniaturas da Galeria -->
+        <div class="gallery">
+          <div class="thumbnail" onclick="toggleImage('image1')">
+            <img
+              src="imoveis/venda_imoveis/imoveis_venda/apartment-5346460_1280.jpg"
+              alt="Imagem 1"
+            />
+          </div>
+          <div class="thumbnail" onclick="toggleImage('image2')">
+            <img
+              src="imoveis/venda_imoveis/imoveis_venda/living-room-1835923_1280.jpg"
+              alt="Imagem 2"
+            />
+          </div>
+          <div class="thumbnail" onclick="toggleImage('image3')">
+            <img
+              src="imoveis/venda_imoveis/imoveis_venda/bedroom-5772286_1280.jpg"
+              alt="Imagem 3"
+            />
+          </div>
+        </div>
+
+        <!-- Visualização Ampliada (Lightbox) -->
+        <div class="lightbox" id="image1">
+          <span class="close" onclick="toggleImage('image1')">&times;</span>
+          <img
+            src="imoveis/venda_imoveis/imoveis_venda/apartment-5346460_1280.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="lightbox" id="image2">
+          <span class="close" onclick="toggleImage('image2')">&times;</span>
+          <img
+            src="imoveis/venda_imoveis/imoveis_venda/living-room-1835923_1280.jpg"
+            alt="Imagem 2"
+          />
+        </div>
+        <div class="lightbox" id="image3">
+          <span class="close" onclick="toggleImage('image3')">&times;</span>
+          <img
+            src="imoveis/venda_imoveis/imoveis_venda/bedroom-5772286_1280.jpg"
+            alt="Imagem 3"
+          />
+        </div>
+        <h2>Venda: Casa em Condomínio</h2>
+        <div>
+          <div class="cta-container">
+            <a href="contato.html" class="cta">ALUGUE AGORA!</a>
+          </div>
+        </div>
+        <!-- Características -->
+        <div class="property-details">
+          <h3>Características</h3>
+          <ul>
+            <li>Preço: R$390.000,00</li>
+            <li>Bairro: Feira 9</li>
+            <li>Localização: Feira de Santana</li>
+            <li>Quartos: 2</li>
+          </ul>
+        </div>
+
+        <!-- Descrição Detalhada do Imóvel -->
+        <div class="property-details">
+          <h3>Descrição</h3>
+          <p>
+            Este é um lindo imóvel disponível para venda, situado em uma
+            localização privilegiada. Possui amplos espaços internos, uma
+            cozinha moderna. É um apartamento ideal pra você que busca conforto
+            e tranquilidade.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer></footer>
+    <script src="loadComponents.js"></script>
+    <script src="galeria.js"></script>
+  </body>
+</html>
